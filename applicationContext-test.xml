@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Change these values locally to modify your run parameters -->
+<bean id="environment" class="com.saucelabs.saucedemo.framework.environment.TestEnvironment">
+    <constructor-arg value="https://www.rmntest.com"/>
+    <constructor-arg value=""/>
+</bean>
+
+<import resource="classpath:applicationContext-framework.xml"/>
+
+</beans>
