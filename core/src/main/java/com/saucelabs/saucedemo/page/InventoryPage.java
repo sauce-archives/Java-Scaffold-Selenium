@@ -3,12 +3,13 @@ package com.saucelabs.saucedemo.page;
 import com.retailmenot.scaffold.webelements.ButtonWebElement;
 import com.retailmenot.scaffold.webelements.DivWebElement;
 import com.saucelabs.saucedemo.BasePage;
+import lombok.Getter;
 import org.openqa.selenium.By;
 
 public class InventoryPage extends BasePage {
-    private DivWebElement inventoryContainer = new DivWebElement(By.className("inventory_container"));
-    private DivWebElement inventoryList = new DivWebElement(By.className("inventory_list"));
-    private DivWebElement inventoryHeader = new DivWebElement(By.className("header_secondary_container"));
+    @Getter private DivWebElement inventoryContainer = new DivWebElement(By.className("inventory_container"));
+    @Getter private DivWebElement inventoryList = new DivWebElement(By.className("inventory_list"));
+    @Getter private DivWebElement inventoryHeader = new DivWebElement(By.className("header_secondary_container"));
 
     /**
      * Returns the Div containing the item specified (zero-indexed)

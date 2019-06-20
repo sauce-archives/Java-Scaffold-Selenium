@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 import com.saucelabs.saucedemo.page.LoginPage;
 
 @Component
-public class SauceDemoNavigation extends WebDriverNavigation {
+public class Navigation extends WebDriverNavigation {
     private final String baseEnvironmentUrl;
 
-    public SauceDemoNavigation(@Value("${base-environment-url}") String baseEnvironmentUrl) {
+    public Navigation(@Value("${base-environment-url}") String baseEnvironmentUrl) {
         this.baseEnvironmentUrl = baseEnvironmentUrl;
     }
 

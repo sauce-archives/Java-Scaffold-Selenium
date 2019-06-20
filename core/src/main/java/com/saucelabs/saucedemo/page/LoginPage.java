@@ -9,12 +9,10 @@ import lombok.Setter;
 import org.openqa.selenium.By;
 
 public class LoginPage extends BasePage {
-    @Getter @Setter private InputWebElement usernameInput = new InputWebElement(By.id("user-name"));
-    @Getter @Setter private InputWebElement passwordInput = new InputWebElement(By.id("password"));
-    @Getter @Setter private ButtonWebElement submitButton = new ButtonWebElement(By.className("btn_action"));
-    @Getter @Setter private DivWebElement credentialsInfo =new DivWebElement(By.id("login_credentials"));
-
-    public LoginPage() {}
+    @Getter private InputWebElement usernameInput = new InputWebElement(By.id("user-name"));
+    @Getter private InputWebElement passwordInput = new InputWebElement(By.id("password"));
+    @Getter private ButtonWebElement submitButton = new ButtonWebElement(By.className("btn_action"));
+    @Getter private DivWebElement credentialsInfo =new DivWebElement(By.id("login_credentials"));
 
     @Override
     public boolean isOnPage() {

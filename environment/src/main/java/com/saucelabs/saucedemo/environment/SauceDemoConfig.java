@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan(value = "com.saucelabs.saucedemo")
 @PropertySource("classpath:/application.properties")
+@ComponentScan(value = "com.saucelabs.saucedemo")
 public class SauceDemoConfig {
 }
